@@ -1,0 +1,19 @@
+{
+  "name": "dope-lib",
+  "version": "0.0.0",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "demo"
+  ],
+  "scripts": {
+    "build": "lerna run build --ignore demo --parallel",
+    "start": "lerna run start --parallel",
+    "test": "lerna run test --parallel"
+  },
+  "devDependencies": {
+    "lerna": "^4.0.0",
+    "microbundle": "^0.14.0"
+  }
+}
